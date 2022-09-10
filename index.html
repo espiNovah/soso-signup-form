@@ -35,14 +35,14 @@
                         <h1>Fill the form to become part of the team</h1>
                     </div>
                     <div class="yRight">
-                        <form action="" method="post">
-                            <div><input type="text" placeholder="User Name"></div>
-                            <div><input type="email" placeholder="E-mail"></div>
-                            <div><input type="password" placeholder="Password"></div>
+                        <form action="#">
+                            <div><input type="text" name="username" placeholder="Username"></div>
+                            <div><input type="email" name="email" placeholder="E-mail"></div>
+                            <div><input type="password" name="password" placeholder="Password"></div>
                             <div><input type="password" placeholder="Confirm Password"></div>
-                            <div><input type="checkbox" name="tos" id="tos"><label for="tos"></label>I agree to the <a href="#">terms of service</a></div>
-                            <div>
-                                <button>Create Account</button> 
+                            <div class="tosCheck"><input type="checkbox" name="tos" id="tos"><label for="tos">I agree to the <a href="#">terms of service</a></label></div>
+                            <div class="fmRest">
+                                <button type="submit">Create Account</button> 
                                 <p>Already have an account? <a href="#">Log in</a> </p>
                             </div>
                         </form>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="zBox">
                     <div class="zLeft">
-                        <p>Social networks</p>
+                        <p>or connect with</p>
                     </div>
                     <div class="zRight">
                         <div class="social1"></div>

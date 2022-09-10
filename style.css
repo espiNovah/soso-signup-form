@@ -11,12 +11,23 @@ body {
     font-size: 16px;
     background-color: #f7f6f7ff;
 }
+h1 {
+    font-size: 45px;
+    padding-top: 10px;
+}
+
+a {
+    color: #F1DEBC;
+    text-decoration: none;
+}
 
 header {
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 15px;
-    text-align: center; 
     height: 50px;
+    background-color: white;
 }
 
 footer {
@@ -30,10 +41,6 @@ footer a {
     color: #242A2C;
     font-size: 30px;
     text-decoration: none;
-}
-
-section {
-    flex: 2;
 }
 
 .container {
@@ -64,7 +71,6 @@ section {
 .xBox {
     display: flex;
     justify-content: space-between;
-
 }
 
 .yBox {
@@ -76,9 +82,7 @@ section {
 }
 
 .yRight {
-    /* display: flex;
-    flex-direction: column; */
-    /* align-items: flex-end; */
+
 }
 
 .zBox {
@@ -99,7 +103,7 @@ button {
     color: #ffffff;
 }
 
-.xBox button:hover {
+button:hover {
     cursor: pointer;
 }
 
@@ -110,8 +114,12 @@ button {
 }
 
 form button {
+    flex: 2;
     background-color: #fee3aeff;
     color: #242A2C;
+}
+form {
+    user-select: none   ;
 }
 
 form input[type="text"],
@@ -127,13 +135,53 @@ input[type="password"] {
     color: #ffffff;
 
 }
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0.15rem;
+    padding: 0rem 0.5rem;
+    border: 0.15rem solid #8C8C94;
+    background-color: #36373bff;
+    transform: translateY(-0.075em);
+}
+input[type="checkbox"]::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: #fee3aeff;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+  }
+  
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
 
-h1 {
-    font-size: 45px;
-    padding-top: 10px;
+div.tosCheck {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 15px;
 }
 
-a {
-    color: #F1DEBC;
-    text-decoration: none;
+div .fmRest {
+    display: flex;
+    height: 70px;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.fmRest > button {
+    height: 60px;
+}
+.fmRest > p {
+    width: 150px;
+    margin-left: 10px;
+    text-align: right;
 }
