@@ -16,8 +16,12 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.3;
     font-size: 16px;
+    overflow: hidden;
     background-color: #f7f6f7ff;
     
+}
+section {
+    flex: 1;
 }
 
 h1 {
@@ -42,7 +46,6 @@ header {
 }
 
 footer {
-    height: 20px;
     padding: 20px;
     text-align: center;
 }
