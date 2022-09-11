@@ -21,7 +21,7 @@ body {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 3vw;
     padding-top: 10px;
 }
 
@@ -57,7 +57,6 @@ footer a {
     display: flex;
     color: var(--colorSnow);
     margin: 10px auto;
-    height: 80vh;
     width: 80vw;
     user-select: none;
 }
@@ -96,30 +95,65 @@ footer a {
     flex: 2;
     display: flex;
     flex-direction: column;
-    padding: 50px 80px;
+    justify-content: space-between;
+    padding: 30px 80px;
     background-color: var(--colorDeep);
     border-radius: 20px;
     user-select: none;
-}
-
-.beta > div {
-    margin-bottom: 40px;
 }
 
 .xBox {
     display: flex;
     justify-content: space-between;
 }
-.xRight {
+.xLeft{
     font-weight: 700;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #F37970;
+    color: var(--colorSnow);
 }
 
 .yBox {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 .yLeft {
     margin-right: 10px;
+}
+.zBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.zLeft {
+    width: 300px;
+    position: absolute;
+    bottom: 40px;
+}
+.zRight {
+    align-self: flex-start;
+    width: 200px;
+}
+.zChannel {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    gap: 5px;
+    width: auto;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+hr {
+    border: 1px solid var(--colorSnow);
+    margin: 10px 0px;
+}
+form {
+    padding: 20px 10px;
 }
 
 button {
@@ -137,12 +171,6 @@ button:hover {
 button:active {
     filter: brightness(1.2);
 }
-
-.xLeft button {
-    background-color: #F37970;
-    color: var(--colorSnow);
-}
-
 form button {
     flex: 2;
     background-color: #272E2F;
@@ -159,7 +187,7 @@ input[type="password"] {
     margin-bottom: 20px;
     border: 1px solid var(--colorSigma);
     background-color: var(--colorSnow);
-    color: var(--colorSnow);
+    color: #272E2F;
 
 }
 input[type="checkbox"] {
@@ -170,17 +198,24 @@ input[type="checkbox"] {
     align-items: center;
     width: 1.5rem;
     height: 1.5rem;
-    padding: 0rem 0.5rem;
-    border-radius: 0.15rem;
+    border-radius: 1.5rem;
     border: 0.15rem solid var(--colorSigma);
     transform: translateY(-0.075em);
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none !important;
+    border-color:#272E2F;
+    box-shadow: 0 0 5px var(--colorSigma);
 }
 
 input[type="checkbox"]::before {
     content: "";
     width: 1rem;
     height: 1rem;
-    background-color: var(--colorKappa);
+    border-radius: 50%;
+    background-color: var(--colorSnow);
     transform: scale(0);
     transition: 120ms transform ease-in-out;
 }
