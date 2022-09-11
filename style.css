@@ -1,3 +1,10 @@
+:root {
+    --colorDeep: #F85C70;
+    --colorSigma:#FABEC0;
+    --colorKappa: #fee3aeff;
+    --colorSnow: #ffffff;
+}
+
 * {
     margin: 0;
 }
@@ -10,15 +17,17 @@ body {
     line-height: 1.3;
     font-size: 16px;
     background-color: #f7f6f7ff;
+    
 }
+
 h1 {
     font-size: 45px;
     padding-top: 10px;
 }
 
 a {
-    color: #F1DEBC;
-    text-decoration: none;
+    color: #FABEC0;
+    font-weight: bold;
 }
 
 header {
@@ -27,46 +36,50 @@ header {
     align-items: center;
     padding: 15px;
     height: 50px;
-    background-color: white;
+    background-color: var(--colorSnow);
+    user-select: none;
+
 }
 
 footer {
     height: 20px;
     padding: 20px;
-    color: #061214;
-    text-align: center; 
+    text-align: center;
 }
 
 footer a {
-    color: #242A2C;
+    color: var(--colorDeep);
     font-size: 30px;
     text-decoration: none;
 }
 
 .container {
     display: flex;
-    color: #ffffff;
+    color: var(--colorSnow);
     margin: 10px auto;
     height: 80vh;
     width: 80vw;
+    user-select: none;
 }
+
 .alpha {
     flex: 1.5;
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
     position: relative;
-    
+
 }
 
-.glide1 {
+.aang {
     display: flex;
     height: 500px;
     width: 250px;
-    background-color: #fee3aeff;
-    border-radius: 20px 0px 0px 20px;
+    background-color: var(--colorKappa);
+    border-radius: 20px 0px 0px 0px;
 }
-.glide2 {
+
+.bang {
     display: flex;
     height: 500px;
     width: 300px;
@@ -74,25 +87,31 @@ footer a {
     position: absolute;
 
 }
-.glide2 > img {
+.bang > img {
     height: auto;
     pointer-events: none;
 }
+
 .beta {
     flex: 2;
     display: flex;
     flex-direction: column;
     padding: 50px 80px;
-    background-color: #242A2C;
+    background-color: var(--colorDeep);
     border-radius: 20px;
+    user-select: none;
 }
 
 .beta > div {
     margin-bottom: 40px;
 }
+
 .xBox {
     display: flex;
     justify-content: space-between;
+}
+.xRight {
+    font-weight: 700;
 }
 
 .yBox {
@@ -103,45 +122,31 @@ footer a {
     margin-right: 10px;
 }
 
-.yRight {
-
-}
-
-.zBox {
-
-}
-
 button {
     font-size: 16px;
     font-weight: 700;
     border-radius: 10px;
     padding: 10px 20px;
     border: none;
-    background-color: #36373bff;
-    color: #ffffff;
-}
-.xBox button {
-    background-color: #36373bff;
-    color: #ffffff;
 }
 
 button:hover {
     cursor: pointer;
 }
 
-.xBox button:active {
-    filter: brightness(0.9);
-    background-color: #808080;
-    color: #ffffff;
+button:active {
+    filter: brightness(1.2);
+}
+
+.xLeft button {
+    background-color: #F37970;
+    color: var(--colorSnow);
 }
 
 form button {
     flex: 2;
-    background-color: #fee3aeff;
-    color: #242A2C;
-}
-form {
-    user-select: none   ;
+    background-color: #272E2F;
+    color: var(--colorSnow);
 }
 
 form input[type="text"],
@@ -152,9 +157,9 @@ input[type="password"] {
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 20px;
-    border: 1px solid #8C8C94;
-    background-color: #36373bff;
-    color: #ffffff;
+    border: 1px solid var(--colorSigma);
+    background-color: var(--colorSnow);
+    color: var(--colorSnow);
 
 }
 input[type="checkbox"] {
@@ -165,24 +170,24 @@ input[type="checkbox"] {
     align-items: center;
     width: 1.5rem;
     height: 1.5rem;
-    border-radius: 0.15rem;
     padding: 0rem 0.5rem;
-    border: 0.15rem solid #8C8C94;
-    background-color: #36373bff;
+    border-radius: 0.15rem;
+    border: 0.15rem solid var(--colorSigma);
     transform: translateY(-0.075em);
 }
+
 input[type="checkbox"]::before {
     content: "";
     width: 1rem;
     height: 1rem;
-    background-color: #fee3aeff;
+    background-color: var(--colorKappa);
     transform: scale(0);
     transition: 120ms transform ease-in-out;
-  }
-  
+}
+
 input[type="checkbox"]:checked::before {
     transform: scale(1);
-  }
+}
 
 div.tosCheck {
     display: flex;
@@ -199,10 +204,12 @@ div .fmRest {
     justify-content: space-between;
     align-items: center;
 }
-.fmRest > button {
+
+.fmRest>button {
     height: 60px;
 }
-.fmRest > p {
+
+.fmRest>p {
     width: 150px;
     margin-left: 10px;
     text-align: right;
