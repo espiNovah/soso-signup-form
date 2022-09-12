@@ -20,10 +20,6 @@ body {
     background-color: #f7f6f7ff;
     
 }
-section {
-    flex: 1;
-}
-
 h1 {
     font-size: 3vw;
     padding-top: 10px;
@@ -35,19 +31,18 @@ a {
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    height: 50px;
+    padding: 10px 100px;
     background-color: var(--colorSnow);
     user-select: none;
 
 }
 
 footer {
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 5px;
 }
 
 footer a {
@@ -55,17 +50,24 @@ footer a {
     font-size: 30px;
     text-decoration: none;
 }
+section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
 
 .container {
     display: flex;
     color: var(--colorSnow);
-    margin: 10px auto;
     width: 80vw;
     user-select: none;
 }
 
 .alpha {
-    flex: 1.5;
+    flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
