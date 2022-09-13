@@ -25,22 +25,33 @@ Don't try to hide that smile. I see it already.
 
 Btw, this idea was inspired by popular musician Omah Lay and two of my friends; one who loves music and the other who thinks true love only exists in fairy tales. This repo is my implementation of the sign up page.
 
-Live demo: https://espinovah.github.io/soso-signup-form/
 
+
+
+## Live demo
+https://espinovah.github.io/soso-signup-form/
 
 
 ![soso-app](https://user-images.githubusercontent.com/81432480/189767145-72301ee4-31eb-456b-83b8-f975f72cf7cb.png)
 
 
-### Built With
+## Built With
 
 - Html
 - CSS
 - JavaScript
 
+
+## Feature
+
+- Password match checker
+- Form validation
+- Desktop support
+
 The aim of this project is to play around with some concepts taught in The Odin Project's (TOP) curriculum. Shout out to the maintainers!
 
-### Acknowledgments
+
+## Acknowledgments
 - Color Palette: [Strawberry Froth color combination](https://www.canva.com/colors/color-palettes/strawberry-froth)
 - Design inpsiration: [Sergey](https://dribbble.com/shots/11369220-sign-up-dark)
 - [The Odin Project](https://www.theodinproject.com/)
