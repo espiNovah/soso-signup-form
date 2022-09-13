@@ -36,11 +36,12 @@
                         <h1>Let SOSO music power connect you with true love</h1>
                     </div>
                     <div class="yRight">
-                        <form action="#">
-                            <div><input type="text" name="username" placeholder="Username"></div>
-                            <div><input type="email" name="email" placeholder="E-mail"></div>
-                            <div><input type="password" name="password" placeholder="Password"></div>
-                            <div><input type="password" placeholder="Confirm Password"></div>
+                        <form id="form">
+                            <div><input type="text" name="username" placeholder="Username" required></div>
+                            <div><input type="email" name="email" placeholder="E-mail" required></div>
+                            <div><input type="password" name="password" placeholder="Password" id="password" required></div>
+                            <div><input type="password" placeholder="Confirm Password" id="confirmPassword" required></div>
+                            <span id="pwCheck"></span>
                             <div class="tosCheck"><input type="checkbox" name="tos" id="tos"><label for="tos">I agree to the <a href="#">terms of service</a></label></div>
                             <div class="fmRest">
                                 <button type="submit">Create Account</button> 
