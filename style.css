@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Ubuntu';
     src: url(./fonts/ubuntu-medium-webfont.woff2),
-         url(./fonts/ubuntu-medium-webfont.woff);
+        url(./fonts/ubuntu-medium-webfont.woff);
 }
 
 :root {
     --colorDeep: #F85C70;
-    --colorSigma:#FABEC0;
+    --colorSigma: #FABEC0;
     --colorKappa: #fee3aeff;
     --colorSnow: #ffffff;
     --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -25,11 +25,13 @@ body {
     font-size: 16px;
     overflow: hidden;
     background-color: #f7f6f7ff;
-    
+
 }
+
 h1 {
     font-size: 3vw;
     padding-top: 10px;
+    width: 90%;
 }
 
 a {
@@ -57,12 +59,10 @@ footer a {
     font-size: 30px;
     text-decoration: none;
 }
+
 section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10px 0px;
+    margin: auto;
 }
 
 
@@ -98,7 +98,8 @@ section {
     position: absolute;
 
 }
-.bang > img {
+
+.bang>img {
     height: auto;
     pointer-events: none;
 }
@@ -117,8 +118,10 @@ section {
 .xBox {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-.xLeft{
+
+.xLeft {
     font-weight: 700;
     border-radius: 10px;
     padding: 10px 20px;
@@ -129,43 +132,60 @@ section {
 .yBox {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 50px;
     margin-bottom: 10px;
 }
+
 .yLeft {
+    display: flex;
+    flex-direction: column;
     margin-right: 10px;
+    flex: 2;
+    flex-wrap: wrap;
 }
+
+.yRight {
+    flex: 1.3;
+}
+
 .zBox {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: relative;
 }
+
 .zLeft {
-    width: 300px;
-    position: absolute;
-    bottom: 40px;
+    margin-right: 10px;
+    flex: 2;
 }
+
 .zRight {
-    align-self: flex-start;
-    width: 200px;
+    flex: 1.3;
 }
+
 .zChannel {
     display: flex;
     align-items: center;
     font-weight: 700;
     gap: 5px;
-    width: auto;
+    width: 150px;
+    color: var(--colorSnow);
     background-color: #000000;
-    border-radius: 10px;
-    padding: 10px 20px;
 }
+
 hr {
-    border: 1px solid var(--colorSnow);
     margin: 10px 0px;
+    border: 1px solid var(--colorSnow);
 }
+
 form {
-    padding: 20px 10px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
 }
 
 button {
@@ -183,15 +203,13 @@ button:hover {
 button:active {
     filter: brightness(1.2);
 }
-form button {
-    flex: 2;
-    background-color: #272E2F;
-    color: var(--colorSnow);
-}
+
 
 #pwCheck {
+    height: 1rem;
     border: 1px transparent solid;
 }
+
 .pwError {
     color: #272E2F;
     font-size: 14px;
@@ -201,7 +219,7 @@ form button {
 form input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 300px;
+    flex: 1;
     font: inherit;
     border-radius: 5px;
     padding: 15px;
@@ -211,9 +229,11 @@ input[type="password"] {
     color: #272E2F;
 
 }
+
 #confirmPassword {
     margin-bottom: 2px;
 }
+
 input[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
@@ -226,11 +246,12 @@ input[type="checkbox"] {
     border: 0.15rem solid var(--colorSigma);
     transform: translateY(-0.075em);
 }
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
     outline: none !important;
-    border-color:#272E2F;
+    border-color: #272E2F;
     box-shadow: 0 0 5px var(--colorSigma);
 }
 
@@ -265,10 +286,15 @@ div .fmRest {
 }
 
 .fmRest>button {
+    flex: 1;
+    width: 150px;
     height: 60px;
+    background-color: #272E2F;
+    color: var(--colorSnow);
 }
 
 .fmRest>p {
+    flex: 1;
     width: 150px;
     margin-left: 10px;
     text-align: right;
