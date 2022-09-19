@@ -2,7 +2,7 @@ const form = document.getElementById("form");
 const pw1 = document.getElementById("password")
 const pw2 = document.getElementById("confirmPassword");
 const errorMessage = document.getElementById("pwCheck");
-const copyrightYear =  document.querySelector(".footer--year")
+const copyrightYear = document.querySelector(".footer--year")
 let isPasswordMatched = null;
 
 function comparePassword(e) {
@@ -34,5 +34,4 @@ pw2.addEventListener('keyup', comparePassword);
 form.addEventListener('submit', checkForm);
 
 /* footer */
-copyrightYear = new Date().getFullYear()
-
+copyrightYear.textContent = new Date().getFullYear();
