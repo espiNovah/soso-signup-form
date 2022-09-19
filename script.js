@@ -34,5 +34,5 @@ pw2.addEventListener('keyup', comparePassword);
 form.addEventListener('submit', checkForm);
 
 /* footer */
-copyrightYear = new Date().getFullYear()
+copyrightYear.textContent = new Date().getFullYear()
 
