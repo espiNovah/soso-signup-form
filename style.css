@@ -28,7 +28,7 @@ body {
 }
 
 h1 {
-    font-size: 3vw;
+    font-size: clamp(2rem, 3vw, 3vw);
     padding-top: 10px;
     width: 90%;
 }
